@@ -1,0 +1,6 @@
+framework module Pods_Like_HeatSNS {
+  umbrella header "Pods-Like&HeatSNS-umbrella.h"
+
+  export *
+  module * { export * }
+}
