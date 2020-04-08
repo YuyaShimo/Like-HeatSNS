@@ -38,10 +38,55 @@ class TimeLineModel {
             text = value["text"] as! String
             imageString = value["imageString"] as! String
             userName = value["userName"] as! String
+            profileImageString = value["profileImageString"] as! String
             likeCounts = value["likeCounts"] as! Int
             heartCounts = value["heartCounts"] as! Int
         }
     }
     
+    func toContents()->[String:Any] {
+        
+        return["text":text,
+               "imageString":imageString,
+               "profileImageString":profileImageString,
+               "userName":userName,
+               "likeCounts":likeCounts,
+               "heartCounts":heartCounts]
+    }
+    
+    func save() {
+        
+        //firebaseに保存
+        ref.setValue(toContents())
+    }
     
 }
+extension TimeLineModel {
+    
+    func plusLike() {   //like数プラス
+        
+        likeCounts += 1
+        ref.child("likeCounts").setValue(likeCounts)
+    }
+    
+    func plusHeart() {  //ハート数プラス
+    
+    heartCounts += 1
+    ref.child("heartCounts").setValue(heartCounts)
+    }
+    
+    func minusLike() {   //like数マイナス
+        
+        likeCounts -= 1
+        ref.child("likeCounts").setValue(likeCounts)
+    }
+    
+    func minusHeart() {  //ハート数マイナス
+    
+    heartCounts -= 1
+    ref.child("heartCounts").setValue(heartCounts)
+    }
+    
+}
+
+
