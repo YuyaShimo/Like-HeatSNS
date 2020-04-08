@@ -19,6 +19,7 @@
 		EB0C714424324EF600D36EB0 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = EB0C714224324EF600D36EB0 /* heart.json */; };
 		EB0C71462432614300D36EB0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C71452432614300D36EB0 /* EditViewController.swift */; };
 		EB74E7AA243DCD26000EA421 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB74E7A9243DCD26000EA421 /* TimeLineTableViewController.swift */; };
+		EB74E7AC243DD2D6000EA421 /* TimeLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB74E7AB243DD2D6000EA421 /* TimeLineModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EB0C714224324EF600D36EB0 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		EB0C71452432614300D36EB0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		EB74E7A9243DCD26000EA421 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		EB74E7AB243DD2D6000EA421 /* TimeLineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				EB0C712B2432419500D36EB0 /* Assets.xcassets */,
+				EB74E7AB243DD2D6000EA421 /* TimeLineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				EB0C71462432614300D36EB0 /* EditViewController.swift in Sources */,
 				EB0C713E24324D7800D36EB0 /* LoginViewController.swift in Sources */,
 				EB0C71232432419200D36EB0 /* AppDelegate.swift in Sources */,
+				EB74E7AC243DD2D6000EA421 /* TimeLineModel.swift in Sources */,
 				EB0C71252432419200D36EB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
