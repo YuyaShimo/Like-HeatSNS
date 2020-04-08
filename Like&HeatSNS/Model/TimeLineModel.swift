@@ -20,5 +20,28 @@ class TimeLineModel {
     let ref:DatabaseReference!
     
     
+    init(text:String,imageString:String,profileImageString:String,userName:String) {
+        
+        self.text = text
+        self.imageString = imageString
+        self.profileImageString = profileImageString
+        self.userName = userName
+        ref = Database.database().reference().child("timeLine").childByAutoId()
+    }
+    
+    init(snapshop:DataSnapshot) {
+        
+        ref = snapshop.ref
+        if let value = snapshop.value as? [String:Any] {
+            
+            //値を取得
+            text = value["text"] as! String
+            imageString = value["imageString"] as! String
+            userName = value["userName"] as! String
+            likeCounts = value["likeCounts"] as! Int
+            heartCounts = value["heartCounts"] as! Int
+        }
+    }
+    
     
 }
