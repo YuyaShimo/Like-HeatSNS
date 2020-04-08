@@ -104,7 +104,17 @@ class EditViewController:
         //imageview.imageがnilでない場合、strageserverへimage送信し、strageserverからimageのURLが帰ってくる。
         //アプリ保存してタイムライン画面へ遷移する。
         
-        performSegue(withIdentifier: "timeLine", sender: nil)
+        if imageView.image != nil {
+            
+            //同期処理
+            DispatchQueue.main.async {
+                self.sendAndGetImageURL()  //当該処理が終わらないと画面遷移しない
+            }
+            
+            performSegue(withIdentifier: "timeLine", sender: nil)
+        }
+        
+        
         
     }
     
@@ -135,6 +145,8 @@ class EditViewController:
         }
         
         //HUD
+        HUD.dimsBackground = false
+        HUD.show(.progress)
         
         //upload
         let uploadTask = imageRef.putData(imageData, metadata: nil){ (metaData, error) in
@@ -147,6 +159,9 @@ class EditViewController:
         imageRef.downloadURL{ (url, error) in
             
             if url != nil {
+                
+                //HUDとめる
+                HUD.hide()
                 
                 self.imageURL = url
                 UserDefaults.standard.setValue(self.imageURL?.absoluteString, forKeyPath: "profileImageString")

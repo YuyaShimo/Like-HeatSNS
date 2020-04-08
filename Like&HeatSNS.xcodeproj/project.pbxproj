@@ -18,7 +18,7 @@
 		EB0C714324324EF600D36EB0 /* good.json in Resources */ = {isa = PBXBuildFile; fileRef = EB0C714124324EF600D36EB0 /* good.json */; };
 		EB0C714424324EF600D36EB0 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = EB0C714224324EF600D36EB0 /* heart.json */; };
 		EB0C71462432614300D36EB0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C71452432614300D36EB0 /* EditViewController.swift */; };
-		EB0C71A22434FE1700D36EB0 /* timeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C71A12434FE1700D36EB0 /* timeLineViewController.swift */; };
+		EB74E7AA243DCD26000EA421 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB74E7A9243DCD26000EA421 /* TimeLineTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		EB0C714124324EF600D36EB0 /* good.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = good.json; sourceTree = "<group>"; };
 		EB0C714224324EF600D36EB0 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		EB0C71452432614300D36EB0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		EB0C71A12434FE1700D36EB0 /* timeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineViewController.swift; sourceTree = "<group>"; };
+		EB74E7A9243DCD26000EA421 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			children = (
 				EB0C713D24324D7800D36EB0 /* LoginViewController.swift */,
 				EB0C71452432614300D36EB0 /* EditViewController.swift */,
-				EB0C71A12434FE1700D36EB0 /* timeLineViewController.swift */,
+				EB74E7A9243DCD26000EA421 /* TimeLineTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,8 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB74E7AA243DCD26000EA421 /* TimeLineTableViewController.swift in Sources */,
 				EB0C71462432614300D36EB0 /* EditViewController.swift in Sources */,
-				EB0C71A22434FE1700D36EB0 /* timeLineViewController.swift in Sources */,
 				EB0C713E24324D7800D36EB0 /* LoginViewController.swift in Sources */,
 				EB0C71232432419200D36EB0 /* AppDelegate.swift in Sources */,
 				EB0C71252432419200D36EB0 /* SceneDelegate.swift in Sources */,
