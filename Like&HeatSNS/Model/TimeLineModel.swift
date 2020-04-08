@@ -11,5 +11,14 @@ import  Firebase
 
 class TimeLineModel {
     
+    var text:String = ""
+    var imageString:String = ""
+    var profileImageString:String = ""
+    var userName:String = ""
+    var likeCounts = 0
+    var heartCounts = 0
+    let ref:DatabaseReference!
+    
+    
     
 }
